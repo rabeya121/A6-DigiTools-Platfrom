@@ -27,7 +27,6 @@ const Step = () => {
     <section className="w-full bg-[#F8FAFC] py-16 md:py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
 
-        {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
           Get Started In 3 Steps
         </h2>
@@ -36,20 +35,19 @@ const Step = () => {
           Start using premium digital tools in minutes, not hours.
         </p>
 
-        {/* Cards */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {steps.map((step) => (
             <div
               key={step.id}
-              className="relative bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300 h-full"
+              className="relative bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm  hover:shadow-md hover:-translate-y-1 transition duration-300  h-full w-full max-w-sm mx-auto"
             >
-              {/* Step Number */}
+              
               <span className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
                 {step.id}
               </span>
 
-              {/* Image */}
-              <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-purple-100">
+              <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-5 hover:bg-purple-400 flex items-center justify-center rounded-full bg-purple-100">
                 <img
                   src={step.img}
                   alt={step.title}
@@ -57,12 +55,10 @@ const Step = () => {
                 />
               </div>
 
-              {/* Title */}
               <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
                 {step.title}
               </h3>
 
-              {/* Description */}
               <p className="text-gray-500 text-xs md:text-sm leading-relaxed">
                 {step.desc}
               </p>
