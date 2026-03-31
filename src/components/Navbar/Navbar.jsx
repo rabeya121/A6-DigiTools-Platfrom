@@ -46,7 +46,7 @@ const Navbar = ({ cartItems }) => {
           </button>
 
           {/* Toggle */}
-          <div className="text-2xl cursor-pointer text-black" onClick={() => setOpen(!open)}>
+          <div className="text-2xl cursor-pointer text-black md:hidden" onClick={() => setOpen(!open)}>
             {open ? <FaTimes /> : <FaBars />}
           </div>
 

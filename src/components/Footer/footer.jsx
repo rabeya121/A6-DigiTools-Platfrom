@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Column 5 (Social Links SAME LINE) */}
           <div >
-            <h4 className="text-white font-semibold mb-4 text-sm">Social Links</h4>
+            <h4 className="text-white font-semibold mb-3 text-sm">Social Links</h4>
             <div className="flex space-x-3">
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-black hover:bg-white cursor-pointer">
                 <FaYoutube />
