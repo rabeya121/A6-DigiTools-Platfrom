@@ -8,6 +8,9 @@ import Stats from "./components/Stats/Stats"
 // import ProductCard from "./components/ProductCard/ProductCard"
 import Products from "./components/ProductCard/Products"
 import Step from "./components/Step/Step";
+import Pricing from "./components/Pricing/Pricing";
+import WorkFlow from "./components/WorkFlow/WorkFlow";
+import Footer from "./components/Footer/footer";
 
 
 
@@ -24,6 +27,9 @@ function App() {
         setCartItems={setCartItems} 
     />
     <Step />
+    <Pricing />
+    <WorkFlow />
+    <Footer />
     {/* <ProductCard /> */}
     <ToastContainer />
     
