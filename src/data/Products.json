@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content with AI.",
+    "price": 29,
+    "period": "mo",
+    "tag": "Best Seller",
+    "features": ["Unlimited AI", "50+ templates", "Grammar check"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Premium templates for marketing.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "features": ["2000+ templates", "Commercial use", "Updates"],
+    "icon": "🎨"
+  }
+]
