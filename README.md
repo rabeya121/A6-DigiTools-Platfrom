@@ -1,16 +1,26 @@
-# React + Vite
+Name of  Project : DigiTools - Digital Tools Buying Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+***Description***
+DigiTools is a modern digital tools buying platform where users can explore premium AI tools, templates, and software. Users can add products to cart, view selected items, and proceed to checkout with a smooth and interactive experience.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ ***Technologies Used***
+-React.js
+-Tailwind CSS, DaisyUI
+-JavaScript (ES6+)
+-React-Toastify (NPM Package)
+-JSON (for product data)
 
-## React Compiler
+***Features***
+1. Add to Cart System
+Users can add products to the cart and see the total count updated instantly in the navbar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Toggle Between Product & Cart
+Users can easily switch between product list and cart section using toggle buttons.
 
-## Expanding the ESLint configuration
+3. Smart Notifications
+Integrated React-Toastify to show alerts for:
+- Add to cart
+- Remove item
+- Checkout success
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
