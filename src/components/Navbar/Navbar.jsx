@@ -8,7 +8,7 @@ const Navbar = ({ cartItems }) => {
   const menuItems = ["Home", "Products", "Features", "Pricing", "Testimonials", "FAQ"];
 
   return (
-    <div className="px-6 md:px-10 py-4 shadow-md bg-white">
+    <div className="px-4 sm:px-6 md:px-8 lg:px-10 py-4 shadow-md bg-white">
 
       <div className="flex justify-between items-center">
 
@@ -16,10 +16,33 @@ const Navbar = ({ cartItems }) => {
           DigiTools
         </h1>
 
-        
-        <ul className={`md:flex lg:flex gap-8 font-medium text-gray-700 ${open ? "flex flex-col mt-4" : "hidden md:flex"}`}>
+
+        {/* <ul className={`md:flex lg:flex gap-8 font-medium text-gray-700 ${open ? "flex flex-col mt-4" : "hidden md:flex"}`}>
           {menuItems.map((item, index) => (
             <li key={index} className="hover:text-purple-600 cursor-pointer">
+              {item}
+            </li>
+          ))}
+        </ul> */}
+        <ul
+          className={`
+                lg:flex gap-8 font-medium text-gray-700
+                ${open ? "flex" : "hidden"}
+                flex-col lg:flex-row
+                absolute lg:static
+                top-16 left-0 w-full lg:w-auto
+                bg-white lg:bg-transparent
+                px-6 lg:px-0 py-4 lg:py-0
+                shadow-md lg:shadow-none
+                z-50
+              `}
+            >
+          {menuItems.map((item, index) => (
+            <li
+              key={index}
+              onClick={() => setOpen(false)} 
+              className="hover:text-purple-600 cursor-pointer py-2 md:py-0"
+            >
               {item}
             </li>
           ))}
@@ -44,12 +67,13 @@ const Navbar = ({ cartItems }) => {
             Get Started
           </button>
 
-          <div className="text-2xl cursor-pointer text-black md:hidden" onClick={() => setOpen(!open)}>
+          <div className="text-2xl cursor-pointer text-black lg:hidden" onClick={() => setOpen(!open)}>
             {open ? <FaTimes /> : <FaBars />}
           </div>
 
         </div>
       </div>
+
     </div>
   );
 };
