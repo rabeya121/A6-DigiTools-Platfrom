@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="bg-[#0B1120] text-gray-300 pt-16 pb-8 px-6 md:px-20">
       <div className="max-w-6xl mx-auto">
 
-        {/* 5 Column Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-6">
           
-          {/* Column 1 */}
+      
           <div className="max-w-[300px]">
             <h2 className="text-3xl font-bold text-white mb-4">
               DigiTools
@@ -19,7 +19,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2 */}
           <div >
             <h4 className="text-white font-semibold mb-3 text-sm">Product</h4>
             <ul className="space-y-1.5 text-sm">
@@ -30,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 */}
+  
           <div>
             <h4 className="text-white font-semibold mb-3 text-sm">Company</h4>
             <ul className="space-y-1.5 text-sm">
@@ -41,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4 */}
+          
           <div >
             <h4 className="text-white font-semibold mb-3 text-sm">Resources</h4>
             <ul className="space-y-1.5 text-sm">
@@ -52,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 5 (Social Links SAME LINE) */}
+          
           <div >
             <h4 className="text-white font-semibold mb-3 text-sm">Social Links</h4>
             <div className="flex space-x-3">
@@ -70,7 +69,7 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom */}
+        
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© 2026 Digitools. All rights reserved.</p>
 

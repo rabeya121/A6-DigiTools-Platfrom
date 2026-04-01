@@ -16,7 +16,7 @@ const Navbar = ({ cartItems }) => {
           DigiTools
         </h1>
 
-        {/* Menu (only one place) */}
+        
         <ul className={`md:flex lg:flex gap-8 font-medium text-gray-700 ${open ? "flex flex-col mt-4" : "hidden md:flex"}`}>
           {menuItems.map((item, index) => (
             <li key={index} className="hover:text-purple-600 cursor-pointer">
@@ -25,7 +25,6 @@ const Navbar = ({ cartItems }) => {
           ))}
         </ul>
 
-        {/* Right Side */}
         <div className="flex items-center gap-4">
 
           <div className="relative">
@@ -45,7 +44,6 @@ const Navbar = ({ cartItems }) => {
             Get Started
           </button>
 
-          {/* Toggle */}
           <div className="text-2xl cursor-pointer text-black md:hidden" onClick={() => setOpen(!open)}>
             {open ? <FaTimes /> : <FaBars />}
           </div>

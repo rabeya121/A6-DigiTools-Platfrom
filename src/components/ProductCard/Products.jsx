@@ -42,7 +42,7 @@ const Products = ({ cartItems, setCartItems }) => {
         to boost your productivity and creativity.
       </p>
 
-      {/* Tabs */}
+      
       <div className="flex justify-center mb-8 bg-white rounded-full p-1 border border-gray-200 w-max mx-auto shadow-sm">
         <button
           className={`px-6 py-2 rounded-full ${activeTab === "Products"
@@ -65,7 +65,7 @@ const Products = ({ cartItems, setCartItems }) => {
         </button>
       </div>
 
-      {/* Products */}
+     
       {activeTab === "Products" && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {productsData.map((product) => (
@@ -78,7 +78,7 @@ const Products = ({ cartItems, setCartItems }) => {
         </div>
       )}
 
-      {/* Cart */}
+      
       {activeTab === "Cart" && (
         <div className="max-w-5xl mx-auto">
           {cartItems.length === 0 ? (
@@ -129,7 +129,7 @@ const Products = ({ cartItems, setCartItems }) => {
                 ))}
               </div>
 
-              {/* Total */}
+              
               <div className="mt-6 flex justify-between items-center">
                 <span className="text-gray-500">Total:</span>
                 <span className="text-xl font-bold text-black">
