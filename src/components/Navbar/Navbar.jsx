@@ -15,15 +15,7 @@ const Navbar = ({ cartItems }) => {
         <h1 className="text-2xl font-bold text-purple-600">
           DigiTools
         </h1>
-
-
-        {/* <ul className={`md:flex lg:flex gap-8 font-medium text-gray-700 ${open ? "flex flex-col mt-4" : "hidden md:flex"}`}>
-          {menuItems.map((item, index) => (
-            <li key={index} className="hover:text-purple-600 cursor-pointer">
-              {item}
-            </li>
-          ))}
-        </ul> */}
+        
         <ul
           className={`
                 lg:flex gap-8 font-medium text-gray-700
